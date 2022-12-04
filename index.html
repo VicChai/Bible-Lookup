@@ -9,18 +9,19 @@
   </head>
   <body class="bg-white-200">
     <h1
-      class="flex-auto py-20 text-white justify-items-center text-center text-3xl font-bold underline bg-slate-900 items-center"
+      class="flex-auto py-20 text-white justify-items-center text-center text-3xl font-bold bg-slate-900 items-center"
     >
       Bible Verse Look-Up
     </h1>
-    <section class="block py-20">
-      <span class="block text-sm font-medium text-slate-700 pt-10 pl-10"
-        >Enter verse you would like to look up</span
-      >
+    <section class="flex-wrap justify-around py-20">
+      <div class="ml-5 font-medium text-slate-700 pt-10 flex-col mb-3">
+        Enter verse you would like to look up
+      </div>
       <input
-        class="border-slate-200 placeholder-slate-400 contrast-more:border-slate-400 contrast-more:placeholder-slate-500 px-2 ml-10 bg-zinc-200"
+        class="ml-5 border-slate-200 placeholder-slate-400 contrast-more:border-slate-400 contrast-more:placeholder-slate-500 bg-zinc-200 flex-row"
         type="text"
       />
+
       <button
         class="submit bg-slate-900 hover:bg-sky-700 rounded px-3 text-white"
       >
@@ -29,14 +30,9 @@
       <button
         class="reset bg-slate-900 hover:bg-sky-700 rounded text-white px-2"
       >
-        Reset Search
+        Reset
       </button>
     </section>
-    <div class="output"></div>
-    <div class="book"></div>
-    <div class="chapter"></div>
-    <div class="verse"></div>
-    <div class="display"></div>
     <script src="main.js"></script>
   </body>
 </html>
